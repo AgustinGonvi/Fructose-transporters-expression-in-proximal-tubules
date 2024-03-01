@@ -404,18 +404,3 @@ saveRDS(all.filtered, file=paste("ALL animals QC", ".rds", sep=""))
 
 # Display session information
 sessionInfo()
-
-# Additional UMAP plots
-grid.arrange(DimPlot(all.filtered, reduction="umap", group.by="orig.ident"),
-             DimPlot(all.filtered, reduction="umap", group.by=DF.name),
-             ncol=2)
-
-# Additional UMAP plots for detailed analysis
-grid.arrange(DimPlot(all.filtered, reduction="umap", group.by="orig.ident"),
-             DimPlot(all.filtered, reduction="umap", group.by=DF.name),
-             ncol=2)
-
-# Final UMAP plot for presentation
-grid.arrange(DimPlot(all.filtered, reduction="umap", group.by="orig.ident"),
-             DimPlot(all.filtered, reduction="umap", group.by=DF.name),
-             ncol=2)
