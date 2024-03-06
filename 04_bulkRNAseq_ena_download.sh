@@ -8,3 +8,4 @@ while read f; do
 	rm *.fastq
 	echo "The download of $f completed successfully!"
 done < filereport_PRJNA244440_tsv.txt
+ 
