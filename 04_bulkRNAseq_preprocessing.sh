@@ -154,7 +154,7 @@ do
   base=$(basename ${infile} _align.sam)
   samtools view --threads 16 -S -b ./${infile} > /media/robb-e532/Data/mRNA_rz_2023/mRNA_data_processed/bam/${base}_align.bam
   samtools sort -@ 8 -m 4G -o /media/robb-e532/Data/mRNA_rz_2023/mRNA_data_processed/bam/${base}_align_sorted.bam \
-                   /media/robb-e532/Data/mRNA_rz_2023/mRNA_data_processed/bam/${base}_align.bam
+                   /media/robb-e532/Data/mRNA_rz_2023/mRNA_data_processed/bam/${base}_align.bam 
   samtools flagstat /media/robb-e532/Data/mRNA_rz_2023/mRNA_data_processed/bam/${base}_align.bam > \
                     /media/robb-e532/Data/mRNA_rz_2023/mRNA_data_processed/docs/bam_flagstat/${base}_bam_flagstat.txt
 done
