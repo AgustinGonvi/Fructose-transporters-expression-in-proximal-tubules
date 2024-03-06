@@ -6,7 +6,7 @@
 - Najeong Kim
 - Benjamin Kramer
 - Agustin Gonzalez-Vicente* (Corresponding Author)
-- and the Kidney Precision Medicine Project
+- on behalf of the Kidney Precision
 
 ## Citation
 If you use any of the code or workflows in this repository, please cite our manuscript in xxx (will update).
